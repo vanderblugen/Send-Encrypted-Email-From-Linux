@@ -12,17 +12,17 @@ If using a raspberry Pi, here's how to check the version
 cat /proc/cpuinfo | grep Model
 ```
 
-Run update and upgrade
+## Run update and upgrade
 ```shell
 sudo apt-get update
 sudo apt-get upgrade -y
 ```
 
-Verify that gpg is installed
+## Verify that gpg is installed
 ```shell
 sudo apt-get install gpg -y
 ```
-If emails are going to be sent using root then always be in as root, if not skip this step
+### If emails are going to be sent using root then always be in as root, if not skip this step
 ```shell
 sudo su
 ```
@@ -30,39 +30,38 @@ sudo su
 Fill out name and email address.  Use the configuration for the email address that's already configured to send using.  
 When done click O for okey
 
-Generate a revocation certificate
+## Generate a revocation certificate
 ```shell
 gpg --output ~/revocation.crt --gen-revoke your_email@address.com
 ```
 
-Change permissions of the revocation certificate
+## Change permissions of the revocation certificate
 ```shell
 chmod 600 ~/revocation.crt
 ```
 
-Import another users public key
+## Import another users public key
 ```shell
 gpg --import name_of_pub_key_file
 ```
 
-Sign the imported key
+## Sign the imported key
 ```shell
 gpg --sign-key email@example.com (emailaddress of public key)
 ```
-
 Press Y then enter to confirm
 
-Export signed key
+## Export signed key
 ```shell
 gpg --output ~/signed.key --export --armor email@example.com
 ```
 
-To export public key
+## To export public key
 ```shell
 gpg --output ~/mygpg.key --armor --export your_email@address.com
 ```
 
-To send encrypted email example
+# To send encrypted email example
 ```shell
 cat filename.txt | gpg -ear "<destination@emailaddress.com>" | mail -a "Subject: Monthly Maintenance" -a "X-Custom-Header: yes" "destination@mailaddress.com"
 ```
