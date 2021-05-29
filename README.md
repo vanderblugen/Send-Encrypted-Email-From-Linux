@@ -1,14 +1,13 @@
-# EncryptedEmailFromPi
-Send Encrypted GPG email from a Rasbperry Pi
+# Send-Encrypted-Email-From-Linux
+This is a basic walkthru on how to configure a Raspberry Pi, or other linux based system, to sned encrypted GPG Emails
 This is something that is for my own personal use.  If you use it and it works for you, let me know.  
 
-This assumes that your Raspberry Pi can already send out emails.
-In this instance postfix and mailutils are already installed and working.  
-To install that follow the instructions at [here](https://medium.com/codingtown/send-mail-using-postfix-server-bbb08331d39d).
+#This assumes that your Linux system can already send out emails from the command line
+    - when setting up this, postfix was already installed and working.  Instructions are [here](https://medium.com/codingtown/send-mail-using-postfix-server-bbb08331d39d).
 
 In this example a Raspberry Pi 3B is being used
 
-To determine version of the raspberry Pi
+If using a raspberry Pi, here's how to check the version
 ```shell
 cat /proc/cpuinfo | grep Model
 ```
