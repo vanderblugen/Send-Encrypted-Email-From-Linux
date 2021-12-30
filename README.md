@@ -60,7 +60,7 @@ gpg --output ~/mygpg.key --armor --export your_email@address.com
 
 # To send encrypted email example
 ```shell
-cat filename.txt | gpg -ear "<destination@emailaddress.com>" | mail -a "Subject: Monthly Maintenance" -a "X-Custom-Header: yes" "destination@mailaddress.com"
+cat filename.txt | gpg -ear "<destination@emailaddress.com>" | mail -a "Subject: Test Email" -a "X-Custom-Header: yes" "destination@mailaddress.com"
 ```
 
 I do not claim to know anything.  The information contained in this I gathered from...<br>
