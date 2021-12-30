@@ -31,9 +31,15 @@ sudo su
 Fill out name and email address.  Use the configuration for the email address that's already configured to send using.  
 When done click O for okey
 
-## Generate a revocation certificate
+## Generate a key
 ```shell
-gpg --output ~/revocation.crt --gen-revoke your_email@address.com
+gpg --gen-key
+```
+
+## Generate a revocation certificate
+This generates a key for the email address you provide without a passphrase
+```shell
+gpg --batch --passphrase '' --quick-gen-key your-email@address.com default default
 ```
 
 ## Change permissions of the revocation certificate
