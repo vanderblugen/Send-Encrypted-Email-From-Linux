@@ -42,11 +42,6 @@ This generates a key for the email address you provide without a passphrase
 gpg --batch --passphrase '' --quick-gen-key your-email@address.com default default
 ```
 
-## Change permissions of the revocation certificate
-```shell
-chmod 600 ~/revocation.crt
-```
-
 ## Import another users public key
 ```shell
 gpg --import name_of_pub_key_file
