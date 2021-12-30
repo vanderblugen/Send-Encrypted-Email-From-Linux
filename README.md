@@ -44,13 +44,13 @@ gpg --import name_of_pub_key_file
 
 ## Sign the imported key
 ```shell
-gpg --sign-key email@example.com (emailaddress of public key)
+gpg --sign-key email@example.com
 ```
 Press Y then enter to confirm
 
 ## Export signed key
 ```shell
-gpg --output ~/signed.key --export --armor email@example.com
+gpg --output ~/signed.key --export --armor your_email@address.com
 ```
 
 ## To export public key
