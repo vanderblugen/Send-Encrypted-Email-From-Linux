@@ -32,11 +32,6 @@ Fill out name and email address.  Use the configuration for the email address th
 When done click O for okey
 
 ## Generate a key
-```shell
-gpg --gen-key
-```
-
-## Generate a revocation certificate
 This generates a key for the email address you provide without a passphrase
 ```shell
 gpg --batch --passphrase '' --quick-gen-key your-email@address.com default default
