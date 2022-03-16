@@ -14,14 +14,14 @@ cat /proc/cpuinfo | grep Model
 
 ## Run update and upgrade
 ```shell
-sudo apt update
-sudo apt upgrade -y
-sudo apt full-upgrade -y
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt-get dist-upgrade -y
 ```
 
 ## Verify that gpg is installed
 ```shell
-sudo apt install gpg -y
+sudo apt-get install gpg -y
 ```
 ### If emails are going to be sent using root then always be in as root, if not skip this step
 ```shell
