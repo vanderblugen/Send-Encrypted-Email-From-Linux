@@ -3,7 +3,7 @@ This is a basic walkthru on how to configure a Raspberry Pi, or other linux base
 This is something that is for my own personal use.  If you use it and it works for you, let me know.  
 
 # This assumes that your Linux system can already send out emails from the command line
-    - when setting up this, postfix was already installed and working.  Instructions are [here](https://medium.com/codingtown/send-mail-using-postfix-server-bbb08331d39d).
+when setting up this, postfix was already installed and working.  Instructions are [here](https://medium.com/codingtown/send-mail-using-postfix-server-bbb08331d39d).
 
 In this example a Raspberry Pi 3B is being used
 
