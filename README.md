@@ -4,7 +4,7 @@ This is something that is for my own personal use.  If you use it and it works f
 
 # This assumes that your Linux system can already send out emails from the command line.  
 
-Instructions for setting that up with Postfix are [here](https://github.com/vanderblugen/Send-Emails-from-Linux-with-Postfix) or with SSMTP [here](https://github.com/vanderblugen/Send-Emails-from-Linux-with-SSMTP).
+Instructions for setting that up with SSMTP [here](https://github.com/vanderblugen/Send-Emails-from-Linux-with-SSMTP) or Postfix [here](https://github.com/vanderblugen/Send-Emails-from-Linux-with-Postfix).
 
 In this example a Raspberry Pi 3B is being used
 
